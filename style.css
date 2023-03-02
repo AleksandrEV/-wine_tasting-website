@@ -22,10 +22,11 @@ table {
 }
 .body_informationAboutWine_backgroundColor {
    background-color: #282828;
-   padding: 100px;
+   padding: 100px 0;
 }
 .body_newWine_backgroundColor {
    background-color: #E6E3C4;
+   padding: 100px 0;
 }
 .body_registration_backgroundColor {
    background-color: #282828;
@@ -96,6 +97,20 @@ table {
    margin-bottom: 80px;
    text-align: center;
    max-width: 1000px;
+   position: relative;
+}
+.body_informationAboutWine_header::after {
+   content: '';
+   position: absolute;
+   display: block;
+   border: #ffffff 1px solid;
+   height: 0px;
+   width: 160px;
+   color: #ffffff;
+   margin: 0 auto;
+   left: 0;
+   right: 0;
+   margin-top: 40px;
 }
 .body_informationAboutWine_main {
    font-style: normal;
@@ -108,4 +123,108 @@ table {
 .imgBokalWina {
    margin-top: 50px;
    margin-bottom: 60px;
+}
+
+
+.body_newWine {
+   display: flex;
+   flex-direction: row;
+}
+.body_newWine_text {
+   display: flex;
+   flex-direction: column;
+   width: 50%;
+}
+.body_newWine_img {
+   display: flex;
+   flex-direction: column;
+   width: 50%;
+}
+.body_newWine_text_header {
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 150%;
+   color: #282828;
+}
+.body_newWine_text_main {
+   font-size: 36px;
+   line-height: 150%;
+   color: #282828;
+   margin-bottom: 60px;
+}
+.body_newWine_text_main::after {
+   content: '';
+   position: absolute;
+   display: block;
+   border: #282828 1px solid;
+   height: 0px;
+   width: 160px;
+   color: #ffffff;
+   margin-top: 30px;
+}
+.body_newWine_text_footer {
+   font-weight: 400;
+   font-size: 14px;  
+   line-height: 150%;  
+   color: #282828;
+   margin-top: 0;
+   margin-bottom: 30px;
+}
+.body_table_of_collections {
+   margin-bottom: 30px;
+}
+.body_table_of_collections td {
+   border: 1px solid #282828;
+}
+.body_table_of_collections tr td:first-of-type {
+   text-align: center;
+   border-top: 0;
+   border-left: 0;
+}
+.body_table_of_collections tr:last-of-type td {
+   border-bottom: 0;
+}
+.body_table_of_collections tr td:last-of-type {
+   border-top: 0;
+   border-right: 0;
+}
+.body_table_of_collections td p:first-of-type {
+   margin: 24px 24px 5px 24px; 
+}
+.body_table_of_collections td p:last-of-type {
+   margin: 5px 24px 24px 24px; 
+}
+
+.body_table_of_collections td p:first-of-type {
+   font-size: 18px;
+   line-height: 150%;
+   color: #282828; 
+}
+.body_table_of_collections td p:last-of-type {
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 150%;
+   color: #282828;
+}
+.body_newWine_footer {
+   margin-top: 0;
+   margin-bottom: 30px;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 150%;
+   color: #282828;
+}
+.body_newWine_button {
+   width: 254px;
+   color: #ffffff;
+   background: #998431;
+   align-items: center;
+   padding: 15px 30px;
+   border: 0;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 20px;
+   letter-spacing: 0.05em;
+   text-transform: uppercase;
+   color: #FFFFFF;
 }
