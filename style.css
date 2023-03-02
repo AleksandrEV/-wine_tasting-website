@@ -22,6 +22,7 @@ table {
 }
 .body_informationAboutWine_backgroundColor {
    background-color: #282828;
+   padding: 100px;
 }
 .body_newWine_backgroundColor {
    background-color: #E6E3C4;
@@ -83,21 +84,28 @@ table {
    color: #ffffff;
    border: 2px solid #ffffff;
    box-sizing: border-box;
-   padding: 100px 0;
-   height: 656px;
-}
-.body_informationAboutWine p {
-   max-width: 70%;
+   padding: 0 100px;
    margin: 0 auto;
    text-align: center;
+   max-width: 80%;
 }
 .body_informationAboutWine_header {
    font-size: 36px;
    line-height: 150%;
+   margin-top: 60;
+   margin-bottom: 80px;
+   text-align: center;
+   max-width: 1000px;
 }
 .body_informationAboutWine_main {
    font-style: normal;
    font-weight: 400;
    font-size: 16px;
    line-height: 150%;
+   margin: 0;
+   text-align: center;
+}
+.imgBokalWina {
+   margin-top: 50px;
+   margin-bottom: 60px;
 }
