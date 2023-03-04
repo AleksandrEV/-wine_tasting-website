@@ -26,7 +26,7 @@ table {
 }
 .body_newWine_backgroundColor {
    background-color: #E6E3C4;
-   padding: 100px 0;
+   padding: 140px 0;
 }
 .body_registration_backgroundColor {
    background-color: #282828;
@@ -129,6 +129,28 @@ table {
 .body_newWine {
    display: flex;
    flex-direction: row;
+   gap: 125px ;
+   justify-content: space-between;
+   position: relative;
+}
+.body_newWine::before {
+   content: '';
+   display: block;
+   position: absolute;
+   border: #998431 0.5px solid;
+   height: 0px;
+   width: 1110px;
+   margin-top: -60px;
+}
+.body_newWine::after {
+   content: '';
+   display: block;
+   position: absolute;
+   border: #998431 0.5px solid;
+   height: 0px;
+   width: 1110px;
+   bottom: 0;
+   margin-bottom: -60px;
 }
 .body_newWine_text {
    display: flex;
@@ -145,12 +167,15 @@ table {
    font-size: 16px;
    line-height: 150%;
    color: #282828;
+   margin-top: 0;
+   margin-bottom: 35px  ;
 }
 .body_newWine_text_main {
    font-size: 36px;
    line-height: 150%;
    color: #282828;
    margin-bottom: 60px;
+   margin-top: 0;
 }
 .body_newWine_text_main::after {
    content: '';
@@ -180,6 +205,7 @@ table {
    text-align: center;
    border-top: 0;
    border-left: 0;
+   padding: 26px 24px;
 }
 .body_table_of_collections tr:last-of-type td {
    border-bottom: 0;
@@ -227,4 +253,96 @@ table {
    letter-spacing: 0.05em;
    text-transform: uppercase;
    color: #FFFFFF;
+}
+.body_newWine_img {
+   display: flex;
+   flex-direction: column;
+}
+.body_newWine_img2 {
+   display: flex;
+   flex-direction: row;
+   gap: 30px;
+}
+.sizeImg {
+   width: 540px;
+   height: 500px;
+   margin-bottom: 30px;
+}
+.sizeImg2 {
+   width: 255px;
+   height: 228px;
+}
+
+
+/*
+.body_registration {
+   padding-top: 100px;
+}
+.body_registration_Legend {
+   position: relative;
+   text-align: center;
+   color: #FFFFFF;
+   display: inline-block;
+   background-color: #282828;
+   border-left: 50px solid #282828;
+   border-right: 50px solid #282828;
+}
+.body_registration_img {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+}
+.body_registration_imgVinograd {
+   position: relative;
+   max-width: 260px;
+   margin-top: -5px;
+}
+.body_registration_imgBochka {
+   position: relative;
+   max-width: 260px;
+   margin-top: 0px;
+}
+*/
+.footer_backgroundColor {
+   padding: 50px 0;
+}
+.footer_navbar {
+   display: flex;
+   flex-direction: row;
+   gap: 20px;
+   justify-content: space-around;
+   border-top: 1px solid #FFFFFF;
+}
+.footer_navbar li {
+   margin: 19px;
+   padding: 0;
+   height: auto;
+}
+.footer_feetback {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   gap: 10px;
+   border-top: 1px solid #FFFFFF;
+   border-bottom: #FFFFFF 1px solid;
+}
+.footer_feetback li {
+   border-right: 1px solid #ffffff;
+   padding-right: 55px;
+   margin: 19px;
+}
+.footer_feetback li:last-of-type {
+   border-right: 0;
+}
+.footer_feetback_img {
+   display: flex;
+   justify-content: space-around;
+   gap: 10px;
+}
+.footer_feetback_img a {
+   margin-right: 35px;
+   align-self: center;
+}
+.footer_feetback_img a:last-of-type {
+   margin-right: 0;
 }

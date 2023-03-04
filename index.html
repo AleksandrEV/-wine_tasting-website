@@ -75,9 +75,11 @@
                      <button class="body_newWine_button">УЗНАТЬ ПОДРОБНЕЕ</button>
                   </div>
                   <div class="body_newWine_img">
-                     <img src="#" alt="wino">
-                     <img src="#" alt="wino">
-                     <img src="#" alt="wino">
+                     <img class="sizeImg " src="http://placehold.it/540x500" alt="wino">
+                     <div class="body_newWine_img2">
+                        <img class="sizeImg2" src="http://placehold.it/255x228" alt="wino">
+                        <img class="sizeImg2" src="http://placehold.it/255x228" alt="wino">
+                     </div>
                   </div>
                </div>
             </div>
@@ -86,16 +88,23 @@
          <div class="body_registration_backgroundColor">
             <div class="container">
                <div class="body_registration">
-                  <form action="#" method="post" name="registration">
-                     <fieldset>
-                        <legend>Запись на дегустацию</legend>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque laborum aperiam beatae quidem neque animi rem iste, ea sit delectus nihil distinctio iure odio ut facere non reprehenderit similique amet.</p>
-                        <input type="text" placeholder="Имя">
-                        <input type="tel" placeholder="Телефон">
-                        <input type="text" placeholder="Бутик на Невском">
-                        <input type="submit" value="Записаться">
-                     </fieldset>
-                  </form>
+                  <div class="body_registration_img">
+                     <img class="body_registration_imgVinograd" src="sours/img/vinograd.png" alt="vinograd">
+                     <img class="body_registration_imgBochka" src="sours/img/bochka.png" alt="bochka">
+                  </div>
+                  <div class="body_registration_formSize">
+                     <form action="#" method="post" name="registration">
+                        <fieldset class="body_registration_form">
+                           <legend class="body_registration_Legend">Запись на дегустацию</legend>
+                           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque   laborum aperiam beatae quidem neque animi rem iste, ea sit delectus  nihil distinctio iure odio ut facere non reprehenderit similique amet.</p>
+                           <input type="text" placeholder="Имя">
+                           <input type="tel" placeholder="Телефон">
+                           <input type="text" placeholder="Бутик на Невском">
+                           <input type="submit" value="Записаться">
+                        </fieldset>
+                     </form>
+                  </div>
+                  
                </div>               
             </div>
          </div>
@@ -107,8 +116,8 @@
 
       <div class="footer_backgroundColor">
          <div class="container">
-            <div class="footer_navbar">
-               <ul>
+            <div>
+               <ul class="footer_navbar">
                   <li><a href="#">Главная</a></li>
                   <li><a href="#">Каталог</a></li>
                   <li><a href="#">Поставщики</a></li>
@@ -118,8 +127,17 @@
                   <li><a href="#">Контакты</a></li>
                </ul>
             </div>
-            <div class="footer_feetback">
-               //grid
+            <div>
+               <ul class="footer_feetback">
+                  <li><a href="#">ВИННЫЙ БУТИК LE CORTE</a></li>
+                  <li><a href="#">8 (912) 123-45-67</a></li>
+                  <li class="footer_feetback_img">
+                     <a href="#"><img src="sours/img/footer/youtube.png" alt="youtube"></a>
+                     <a href="#"><img src="sours/img/footer/vk.png" alt="VK"></a>
+                     <a href="#"><img src="sours/img/footer/facebook.png" alt="facebook"></a>
+                  </li>
+                  <li><a href="#">© le-corte.ru</a></li>
+               </ul>
             </div>            
          </div>
       </div>
